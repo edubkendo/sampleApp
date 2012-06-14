@@ -31,5 +31,5 @@ git remote add origin git@github.com:username/sampleApp.git
 git push -u origin master
 
 ```
-
+ 
 So far only minor changes, all of which have been discussed in the previous app.
