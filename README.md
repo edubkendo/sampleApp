@@ -1,37 +1,35 @@
-# SampleApp
+# (Tower) on Rails Tutorial: third application
 
-## Install
+This is the sample application for 
+[*Ruby on Rails Tutorial: Learn Rails by Example*](http://railstutorial.org/)
+by [Michael Hartl](http://michaelhartl.com/). 
 
-First [setup the Tower.js development environment](http://towerjs.org/guides/development#environment), then run:
+However, instead of using Ruby on Rails, I am following along but using Coffeescript, Node,
+and particularly, the [*Tower.js*](http://towerjs.org/) framework, which was modeled quite closely on rails. It is my plan to not only learn Tower by doing so, but also to document the differences for those following in my footsteps. So far:
 
-```
-git clone git@github.com:undefined/sampleApp.git
-cd sampleApp
-npm install
-node server
-```
+See https://github.com/edubkendo/firstApp for how I worked through the first chapter of the book, which includes information on getting a Tower.js app running on [Heroku](http://www.heroku.com/).
 
-## Test
+For chapter two, including examples of relationships (hasMany/belongsTo), validations and flash messages, check out https://github.com/edubkendo/demoApp .
 
-Run tests:
+## Setup
 
 ```
-npm test
+tower new sampleApp
+
+cd sampleApp/
+
+npm install .
+
+git init
+
+git add .
+
+git commit -m "Initial commit"
+
+git remote add origin git@github.com:username/sampleApp.git
+
+git push -u origin master
+
 ```
 
-Read up on [testing Tower.js apps](http://towerjs.org/guides/testing).
-
-## Deploy
-
-Read [How to deploy Tower Apps to Heroku](http://towerjs.org/guides/deployment#heroku).
-
-## Documentation
-
-- [Tower.js](http://towerjs.org/guides)
-- [MongoDB](http://www.mongodb.org/display/DOCS/Advanced+Queries)
-- [Node.js](http://nodejs.org/docs/v0.6.11/api/fs.html)
-- [Mocha](https://github.com/visionmedia/mocha)
-- [CoffeeScript](http://coffeescript.org/)
-- [Stylus](http://learnboost.github.com/stylus/)
-
-If all else fails, see the [Rails Guides](http://guides.rubyonrails.org/), should be fairly close.
+So far only minor changes, all of which have been discussed in the previous app.
